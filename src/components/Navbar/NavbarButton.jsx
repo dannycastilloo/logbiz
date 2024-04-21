@@ -7,6 +7,6 @@ import { NavLink } from "react-router-dom"
 
 export const NavbarButton = ({ to, view }) => {
     return (
-        <NavLink className='text-black bg-white hover:bg-customOrange transition-all duration-300' to={to}>{view}</NavLink>
+        <NavLink className='text-xs md:text-sm text-black font-bold text-center rounded py-3 px-4 bg-white hover:bg-customOrange transition-all duration-300' to={to} title={view}>{view}</NavLink>
     )
 }

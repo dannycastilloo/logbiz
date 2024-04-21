@@ -10,19 +10,21 @@ import { LoginView } from './views/LoginView'
 function App() {
 
   return (
-    <div className='flex flex-col items-center'>
-      
+    <div className='flex flex-col items-center mt-4'>
+
       <Navbar />
 
-      <Routes>
-        <Route path="*" element={<Navigate to="/" />} />
-        <Route path="/" element={<HomeView />} />
-        <Route path="/services" element={<ServicesView />} />
-        <Route path="/dashboard" element={<DashboardView />} />
-        <Route path="/services-listing" element={<ServicesListingView />} />
-        <Route path="/contact" element={<ContactView />} />
-        <Route path="/login" element={<LoginView />} />
-      </Routes>
+      <div className='mt-32'>
+        <Routes>
+          <Route path="*" element={<Navigate to="/" />} />
+          <Route path="/" element={<HomeView />} />
+          <Route path="/services" element={<ServicesView />} />
+          <Route path="/dashboard" element={<DashboardView />} />
+          <Route path="/services-listing" element={<ServicesListingView />} />
+          <Route path="/contact" element={<ContactView />} />
+          <Route path="/login" element={<LoginView />} />
+        </Routes>
+      </div>
 
     </div>
   )
